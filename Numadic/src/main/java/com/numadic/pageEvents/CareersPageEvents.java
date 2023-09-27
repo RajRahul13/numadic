@@ -1,10 +1,7 @@
 package com.numadic.pageEvents;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import com.numadic.base.baseTest;
 import com.numadic.pageObjects.CareersPageObjects;
 import com.numadic.utils.ElementFetch;
 

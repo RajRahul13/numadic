@@ -1,12 +1,6 @@
 package com.numadic.pageEvents;
 
-import static org.testng.Assert.assertEquals;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import com.numadic.base.baseTest;
