@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="2" passed="1" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-15T17:18:12 IST" name="Regression_Suite" finished-at="2023-12-15T17:18:45 IST" duration-ms="32374">
+  <suite started-at="2024-04-24T23:57:08 IST" name="Regression_Suite" finished-at="2024-04-24T23:57:38 IST" duration-ms="29602">
     <groups>
     </groups>
-    <test started-at="2023-12-15T17:18:12 IST" name="Test" finished-at="2023-12-15T17:18:45 IST" duration-ms="32374">
+    <test started-at="2024-04-24T23:57:08 IST" name="Test" finished-at="2024-04-24T23:57:38 IST" duration-ms="29602">
       <class name="com.numadic.QAtests.TestCase1">
-        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:12 IST" name="beforeTestMethod" finished-at="2023-12-15T17:18:13 IST" duration-ms="345" status="PASS">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:08 IST" name="beforeTestMethod" finished-at="2024-04-24T23:57:09 IST" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String)[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:13 IST" name="beforeMethodMethod" finished-at="2023-12-15T17:18:22 IST" duration-ms="9299" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String)[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:09 IST" name="beforeMethodMethod" finished-at="2024-04-24T23:57:20 IST" duration-ms="11005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,43 +22,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method retried="true" signature="careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:22 IST" name="careerPageScript" finished-at="2023-12-15T17:18:26 IST" duration-ms="4291" status="SKIP">
+        <test-method retried="true" signature="careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:20 IST" name="careerPageScript" finished-at="2024-04-24T23:57:24 IST" duration-ms="3956" status="SKIP">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="lyteDropPlaceholderNormal">...</span> is not clickable at point (368, 557). Other element would receive the click: <p class="cw-apply-note">...</p>
-  (Session info: chrome=120.0.6099.71)
-Build info: version: '4.10.0', revision: 'c14d967899'
+              <![CDATA[element click intercepted: Element <span class="lyteDropPlaceholderNormal">...</span> is not clickable at point (368, 537). Other element would receive the click: <p class="cw-apply-note">...</p>
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e6d9048ee8ac4e30804d1a8554aa235, clickElement {id=79F3FD7E12105135DC9664AEB3CE40A4_element_1859}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\61053553\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53214/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e6d9048ee8ac4e30804d1a8554aa235)] -> xpath: //lyte-drop-button[@data-zcqa='manual_Salutation']//span[@class='lyteDropPlaceholderNormal'][normalize-space()='-None-']]
-Session ID: 9e6d9048ee8ac4e30804d1a8554aa235]]>
+Command: [758659ed41d9d7f3d880fcb488c6ae92, clickElement {id=f.CEB13839ECD9A16CCA5F0FCC13E945A1.d.7DD7105938D5F8C6E027AE98BA3C072C.e.2315}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\61053553\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62543/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (758659ed41d9d7f3d880fcb488c6ae92)] -> xpath: //lyte-drop-button[@data-zcqa='manual_Salutation']//span[@class='lyteDropPlaceholderNormal'][normalize-space()='-None-']]
+Session ID: 758659ed41d9d7f3d880fcb488c6ae92]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="lyteDropPlaceholderNormal">...</span> is not clickable at point (368, 557). Other element would receive the click: <p class="cw-apply-note">...</p>
-  (Session info: chrome=120.0.6099.71)
-Build info: version: '4.10.0', revision: 'c14d967899'
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="lyteDropPlaceholderNormal">...</span> is not clickable at point (368, 537). Other element would receive the click: <p class="cw-apply-note">...</p>
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e6d9048ee8ac4e30804d1a8554aa235, clickElement {id=79F3FD7E12105135DC9664AEB3CE40A4_element_1859}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\61053553\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53214/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e6d9048ee8ac4e30804d1a8554aa235)] -> xpath: //lyte-drop-button[@data-zcqa='manual_Salutation']//span[@class='lyteDropPlaceholderNormal'][normalize-space()='-None-']]
-Session ID: 9e6d9048ee8ac4e30804d1a8554aa235
+Command: [758659ed41d9d7f3d880fcb488c6ae92, clickElement {id=f.CEB13839ECD9A16CCA5F0FCC13E945A1.d.7DD7105938D5F8C6E027AE98BA3C072C.e.2315}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\61053553\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62543/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (758659ed41d9d7f3d880fcb488c6ae92)] -> xpath: //lyte-drop-button[@data-zcqa='manual_Salutation']//span[@class='lyteDropPlaceholderNormal'][normalize-space()='-None-']]
+Session ID: 758659ed41d9d7f3d880fcb488c6ae92
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 at com.numadic.pageEvents.QAengineerPageEvents.basicInfo(QAengineerPageEvents.java:24)
 at com.numadic.QAtests.TestCase1.careerPageScript(TestCase1.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -95,18 +95,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careerPageScript -->
-        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:26 IST" name="afterMethodMethod" finished-at="2023-12-15T17:18:27 IST" duration-ms="315" status="PASS">
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:24 IST" name="afterMethodMethod" finished-at="2024-04-24T23:57:24 IST" duration-ms="489" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=careerPageScript status=SKIP method=TestCase1.careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808] output={null}]]]>
+                <![CDATA[[TestResult name=careerPageScript status=SKIP method=TestCase1.careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String)[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:27 IST" name="beforeMethodMethod" finished-at="2023-12-15T17:18:34 IST" duration-ms="7609" status="PASS">
+        <test-method is-config="true" signature="beforeMethodMethod(java.lang.String)[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:24 IST" name="beforeMethodMethod" finished-at="2024-04-24T23:57:32 IST" duration-ms="8370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,22 +117,91 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method signature="careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:34 IST" name="careerPageScript" finished-at="2023-12-15T17:18:44 IST" duration-ms="9763" status="PASS">
+        <test-method signature="careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:32 IST" name="careerPageScript" finished-at="2024-04-24T23:57:36 IST" duration-ms="3675" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="lyteDropPlaceholderNormal">...</span> is not clickable at point (368, 537). Other element would receive the click: <p class="cw-apply-note">...</p>
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85be14a55f71da1ce238faddad3ca2d4, clickElement {id=f.82C4D4A82E1C5086AD576DBFA078CC54.d.EB25E7AE59A6CD6DD70357A0622C8D46.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\61053553\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62628/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85be14a55f71da1ce238faddad3ca2d4)] -> xpath: //lyte-drop-button[@data-zcqa='manual_Salutation']//span[@class='lyteDropPlaceholderNormal'][normalize-space()='-None-']]
+Session ID: 85be14a55f71da1ce238faddad3ca2d4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="lyteDropPlaceholderNormal">...</span> is not clickable at point (368, 537). Other element would receive the click: <p class="cw-apply-note">...</p>
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85be14a55f71da1ce238faddad3ca2d4, clickElement {id=f.82C4D4A82E1C5086AD576DBFA078CC54.d.EB25E7AE59A6CD6DD70357A0622C8D46.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\61053553\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62628/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85be14a55f71da1ce238faddad3ca2d4)] -> xpath: //lyte-drop-button[@data-zcqa='manual_Salutation']//span[@class='lyteDropPlaceholderNormal'][normalize-space()='-None-']]
+Session ID: 85be14a55f71da1ce238faddad3ca2d4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.numadic.pageEvents.QAengineerPageEvents.basicInfo(QAengineerPageEvents.java:24)
+at com.numadic.QAtests.TestCase1.careerPageScript(TestCase1.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careerPageScript -->
-        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:44 IST" name="afterMethodMethod" finished-at="2023-12-15T17:18:44 IST" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:37 IST" name="afterMethodMethod" finished-at="2024-04-24T23:57:37 IST" duration-ms="304" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=careerPageScript status=SUCCESS method=TestCase1.careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808] output={null}]]]>
+                <![CDATA[[TestResult name=careerPageScript status=FAILURE method=TestCase1.careerPageScript()[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.numadic.QAtests.TestCase1@26d9b808]" started-at="2023-12-15T17:18:44 IST" name="afterTestMethod" finished-at="2023-12-15T17:18:45 IST" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:com.numadic.QAtests.TestCase1@5a45133e]" started-at="2024-04-24T23:57:37 IST" name="afterTestMethod" finished-at="2024-04-24T23:57:38 IST" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->

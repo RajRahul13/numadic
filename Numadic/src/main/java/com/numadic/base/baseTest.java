@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -88,15 +89,18 @@ public class baseTest {
 
 	public void setupDriver(String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+		//	WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(options);
 
 		}else if(browser.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+		//	WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 
 		}else if(browser.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().setup();
+		//	WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 
 		}

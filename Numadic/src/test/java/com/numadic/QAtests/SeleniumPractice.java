@@ -1,10 +1,17 @@
 package com.numadic.QAtests;
 
+import java.io.File;
+import org.openqa.selenium.WebDriver;
+import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,13 +26,38 @@ public class SeleniumPractice {
 		setupDriver();
 		
 		driver.get("https://omayo.blogspot.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
+		String Title = driver.getTitle();
+		String currentURL = driver.getCurrentUrl();
+		System.out.println(Title +" "+ currentURL);
+		
+		//image element
+		List <WebElement> img = driver.findElements(By.tagName("img"));
+		for(WebElement imge : img) {
+		String height = imge.getAttribute("height");
+		System.out.println(height);
+		}
+		
+		//TakescreenShot
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		String filename = System.getProperty("user.dir")+File.separator+"screenshotsDemo"+File.separator;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+	
+		try {
+			FileUtils.copyFile(src, new File(filename+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		for(WebElement link : links) {
 			String url = link.getAttribute("href");
+			String val = link.getText();
+			System.out.println(val);
 			
 		//	verifyLink(url) ; //uncomment when need to find brokenlink
 		}
@@ -44,8 +76,9 @@ public class SeleniumPractice {
 		//for opening in incognito mode
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--incognito");
-			
-			WebDriverManager.chromedriver().setup();
+//			
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver(options);
 			driver = new ChromeDriver(options);
 			
 	}
@@ -71,27 +104,34 @@ public class SeleniumPractice {
 	
 	public static void verifyWebTable() {
 		
+		WebElement table = driver.findElement(By.id("table1"));
+		
+		
 		//for finding rows
-		List <WebElement> rows = driver.findElements(By.xpath("//*[@id=\"table1\"]/tbody/tr"));
-		int rowNum = rows.size();
+		List <WebElement> tr = table.findElements(By.tagName("tr"));
 		
-		//for finding columns
-		List <WebElement> cols = driver.findElements(By.xpath("//*[@id=\"table1\"]/thead/tr/th"));
-		int cloNum = cols.size();
-		
-		for(WebElement header : cols) {
-			String headername = header.getText();
-			System.out.print(headername+" ");
+		//iterating through each rows
+		for(int i=0;i<tr.size();i++) {
+			WebElement row = tr.get(i);
 		}
+			//for getting heading in table
+			List<WebElement> th = driver.findElements(By.tagName("th"));
+			for(int j=0;j<th.size();j++) {
+				WebElement head = th.get(j);
+				String headtext = head.getText();
+				System.out.println(headtext);
+			}
+			
+			//
+			
+			List<WebElement> td = driver.findElements(By.tagName("td"));
+			for(int j=0;j<td.size();j++) {
+				WebElement data = td.get(j);
+				String dataText = data.getText();
+				System.out.println(dataText);
+			}
 		
-		List<WebElement> ElementNo = driver.findElements(By.xpath("//*[@id=\"table1\"]/tbody/tr/td"));
-		int EleNum = ElementNo.size();
-		System.out.println();
-		for(WebElement ele : ElementNo) {
-			String eleVal = ele.getText();
-			System.out.print(eleVal+" ");
 		
-		}
 		
 	}
 
