@@ -1,4 +1,4 @@
-package com.numadic.QAtests;
+	package com.numadic.QAtests;
 
 import java.io.File;
 import org.openqa.selenium.WebDriver;
