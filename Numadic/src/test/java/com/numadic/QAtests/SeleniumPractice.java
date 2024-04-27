@@ -12,12 +12,9 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SeleniumPractice {
 	public static WebDriver driver;
@@ -130,7 +127,7 @@ public class SeleniumPractice {
 				String dataText = data.getText();
 				System.out.println(dataText);
 				
-				//comment2
+				//comment_PersonalPc
 			}
 		
 		
