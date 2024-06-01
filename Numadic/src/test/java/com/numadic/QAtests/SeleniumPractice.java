@@ -56,7 +56,7 @@ public class SeleniumPractice {
 			String val = link.getText();
 			System.out.println(val);
 			
-		//	verifyLink(url) ; //uncomment when need to find brokenlink
+			verifyLink(url) ; //uncomment when need to find brokenlink
 		}
 		
 		verifyWebTable();
@@ -107,7 +107,7 @@ public class SeleniumPractice {
 		//for finding rows
 		List <WebElement> tr = table.findElements(By.tagName("tr"));
 		
-		//iterating through each rows
+		//iterating through each  ows
 		for(int i=0;i<tr.size();i++) {
 			WebElement row = tr.get(i);
 		}
@@ -118,7 +118,6 @@ public class SeleniumPractice {
 				String headtext = head.getText();
 				System.out.println(headtext);
 			}
-			
 			//
 			
 			List<WebElement> td = driver.findElements(By.tagName("td"));
@@ -126,12 +125,8 @@ public class SeleniumPractice {
 				WebElement data = td.get(j);
 				String dataText = data.getText();
 				System.out.println(dataText);
-				
 				//comment_PersonalPc
-			}
-		
-		
-		
+			}	
 	}
 
 		
